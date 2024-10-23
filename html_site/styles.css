@@ -1,0 +1,86 @@
+
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #9c2cff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 10px 0;     
+    
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #00a7d1;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #cc30b2;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-color: #9c2cff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #00a7d1;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logo {
+    width: 100px; 
+    height: 100px;
+    position: absolute;
+    top: 15px; 
+    right: 10px; 
+}
+
+button:hover {
+    background-color: #ffe400;
+    color: #9c2cff;
+}
+
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
